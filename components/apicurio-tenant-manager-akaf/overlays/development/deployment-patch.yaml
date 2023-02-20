@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: apicurio-tenant-manager-akaf
+  namespace: nipatil-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:39083f833398f5d8f3daec445ae8e6125661c4b019b67e7fab59a45bb879e3cb
+        name: container-image
+        resources: {}
+status: {}
