@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: apicurio-tenant-manager-akaf
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:XBz6o-apicurio-tenant-manager-akaf
+      - image: quay.io/redhat-appstudio/user-workload@sha256:39083f833398f5d8f3daec445ae8e6125661c4b019b67e7fab59a45bb879e3cb
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
